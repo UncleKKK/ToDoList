@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="34px" viewBox="0 0 29 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-901.000000, -240.000000)">
+            <g id="编组-4" transform="translate(895.000000, 238.000000)">
+                <g id="编组" transform="translate(16.285898, 17.433013) rotate(30.000000) translate(-16.285898, -17.433013) translate(6.285898, 3.933013)">
+                    <path d="M10.5,8.8660254 L10.5,4.81896658 C10.5,2.63581745 12.290861,0.866025404 14.5,0.866025404 C16.709139,0.866025404 18.5,2.63581745 18.5,4.81896658 L18.5,8.8660254" id="路径" stroke="#79B0D5" stroke-width="4" stroke-linecap="round" transform="translate(14.500000, 4.866025) rotate(10.000000) translate(-14.500000, -4.866025) "></path>
+                    <rect id="矩形" fill="#79B0D5" transform="translate(3.937822, 10.437822) rotate(111.000000) translate(-3.937822, -10.437822) " x="2.43782217" y="7.43782217" width="3" height="6" rx="1.5"></rect>
+                    <rect id="矩形备份-2" fill="#79B0D5" transform="translate(4.339746, 17.133975) scale(1, -1) rotate(118.000000) translate(-4.339746, -17.133975) " x="2.83974596" y="14.1339746" width="3" height="6" rx="1.5"></rect>
+                    <path d="M10.8660254,25.5 L10.8660254,21.4529412 C10.8660254,19.269792 12.6568864,17.5 14.8660254,17.5 C17.0751644,17.5 18.8660254,19.269792 18.8660254,21.4529412 L18.8660254,25.5" id="路径" stroke="#79B0D5" stroke-width="4" stroke-linecap="round" transform="translate(14.866025, 21.500000) scale(1, -1) rotate(15.000000) translate(-14.866025, -21.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

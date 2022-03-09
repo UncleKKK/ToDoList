@@ -1,0 +1,110 @@
+.input-container
+{
+  position:relative;
+  top: calc(50% - 12em);
+  width:30em;
+  height:24em;
+  background: rgba(255,255,255,0.3);
+  border-radius:10px;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+  padding:2.5em;
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.4s cubic-bezier(.7,.2,.64,.9);
+  opacity:0;
+}
+@media screen and (max-width:768px) {
+  .input-container
+  {
+    position:relative;
+    width:calc(100% - 1em);
+    height:24em;
+    background: rgba(255,255,255,0.3);
+    border-radius:10px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+    padding:2.5em 0;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.4s cubic-bezier(.7,.2,.64,.9);
+    opacity:0;
+  }
+}
+.input-container-register
+{
+  top: calc(50% - 12em);
+  height:28em;
+}
+.input-container-show
+{
+  opacity:1;
+}
+.input-container a
+{
+  margin-top:30px;
+  width:80%;
+  font-size: 1.05em;
+  color:#F4F4F4;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.input-container a span
+{
+  position:relative;
+  cursor: pointer;
+}
+.input-container a span::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width:38%;
+  height:2px;
+  z-index: -1;
+  background:#F4F4F4;
+  transition: width 0.4s cubic-bezier(.7,.2,.64,.9);
+}
+.input-container a .forget-password::after
+{
+  left: 0px;
+}
+.input-container a .register::after
+{
+  right:0px;
+}
+.input-container a span:hover:after
+{
+  width:100%;
+}
+.input-container .state-message
+{
+  position:absolute;
+  top: -70px;
+  text-align: center;
+  font-size: 1.2em;
+  color:#333;
+  text-shadow: 0 25px 45px rgba(0,0,0,0.2);
+  transition: transform 0.4s cubic-bezier(.7,.2,.64,.9),opacity 0.4s cubic-bezier(.7,.2,.64,.9);
+  font-family: 'Apple LiGothic Medium';
+  backdrop-filter: blur(5px);
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 20px;
+}
+.input-container .state-message-show
+{
+  transform:translateY(0);
+  opacity:1.0;
+}
+.input-container .state-message-hide
+{
+  transform:translateY(40px);
+  opacity:0;
+}

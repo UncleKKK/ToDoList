@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+}
+div::-webkit-scrollbar,
+ul::-webkit-scrollbar{ 
+  display:none;
+}
+.pin-icon {
+  width: 25px; 
+  height: 25px;
+  fill: #778BC7;
+  overflow: hidden;
+}
+.home-icon {
+  width: 25px; 
+  height: 25px;
+  fill: #DF987E;
+  overflow: hidden;
+}
+:root{
+    --tab-bg-color:#218bee;
+    --tab-section1-color:#FAC4A8;
+    --tab-section2-color:#B3BDFE;
+    --tab-section3-color:#3B7DD6;
+    --tab-section4-color:#AFD3FF;
+    --tab-section5-color:#FFC611;
+    --bg-color:#333;
+    --home-font-color:#464646;
+
+    --home-bg-color:#FFDAC2;
+    --pin-bg-color:#D9DDF8;
+    --message-bg-color:#FFEC89;
+    --user-bg-color:#C3E7FF;
+    --user-btn-bg-color:#F3FDFF;
+}
