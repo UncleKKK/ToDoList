@@ -39,6 +39,7 @@ export default {
     setup(props,{ emit }){
         // -- refs & public fun
         const {
+            mobileRef,
             main_box_content,
             box_container,
             box_content,
@@ -46,7 +47,7 @@ export default {
             handle_next,
             upload_content_style
         } = use_list_box(props)
-        
+
         const { proxy } = getCurrentInstance()
         // -- tap action
         const change_done_type_tap_action = () =>{

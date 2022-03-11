@@ -40,6 +40,7 @@ export default {
     setup(props,{ emit }){
         // -- refs & public fun
         const {
+            mobileRef,
             main_box_content,
             box_container,
             box_content,

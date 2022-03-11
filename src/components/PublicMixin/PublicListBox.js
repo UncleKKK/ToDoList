@@ -19,18 +19,19 @@ export const use_list_box = (props) => {
     // -- config fun
     const set_mobile_onscroll_action = () => {
         if (!mobileRef.is_mobile) return
-        box_container.value.addEventListener('scroll', (e) => {
-            if (mobileRef.show_del_timer) clearTimeout(mobileRef.show_del_timer)
-            mobileRef.show_del_timer = setTimeout(() => {
-                if (box_container.value.scrollLeft > parseInt(mobileRef.max_offset_left / 2)) {
-                    props.data.is_edit = true
-                    box_container.value.scrollLeft = mobileRef.max_offset_left
-                } else {
-                    props.data.is_edit = false
-                    box_container.value.scrollLeft = 0
-                }
-            }, 500)
-        })
+        box_container.value.addEventListener('scroll', scroll_event_listener_fun)
+    }
+    const scroll_event_listener_fun = () => {
+        if (mobileRef.show_del_timer) clearTimeout(mobileRef.show_del_timer)
+        mobileRef.show_del_timer = setTimeout(() => {
+            if (box_container.value.scrollLeft > parseInt(mobileRef.max_offset_left / 2)) {
+                props.data.is_edit = true
+                box_container.value.scrollLeft = mobileRef.max_offset_left
+            } else {
+                props.data.is_edit = false
+                box_container.value.scrollLeft = 0
+            }
+        }, 500)
     }
     const upload_content_style = () => {
         let _size = box_content.value.getBoundingClientRect()
@@ -48,6 +49,7 @@ export const use_list_box = (props) => {
         set_mobile_onscroll_action()
     }
     return {
+        mobileRef,
         styleRef,
         main_box_content,
         box_container,
